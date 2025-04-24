@@ -1,13 +1,17 @@
-alphazero/__pycache__
-alphazero/pytorch_classification/__pycache__
-alphazero/pytorch_classification/utils/__pycache__
-AlphaZeroGUI/__pycache__
+# runtime artifacts
 AlphaZeroGUI/*.ui
-game2dboard/__pycache__
-boardgame/__pycache__
-hnefatafl/__pycache__
-fastafl/__pycache__
-.idea
 checkpoint
 data
 runs
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# editor
+*~
+.*~
+*.swp
+*.swo
+.idea
