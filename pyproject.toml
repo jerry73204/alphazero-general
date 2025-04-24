@@ -1,0 +1,37 @@
+[project]
+name = "alphazero-general"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "aeon", email = "jerry73204@gmail.com" }
+]
+dependencies = [
+    "numpy<1.25",
+    "Cython<3.1",
+    "tensorboard<2.15",
+    "tensorboardX<2.7",
+    "choix<0.4",
+    "PySide2<5.16",
+    "six<1.17",
+    "torch<2.5",
+]
+readme = "README.md"
+requires-python = "~= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["alphazero", "AlphaZeroGUI", "boardgame", "fastafl", "hnefatafl"]
+
+[[tool.rye.sources]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
